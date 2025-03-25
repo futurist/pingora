@@ -18,8 +18,8 @@ path = "src/lib.rs"
 
 [dependencies]
 hashbrown = "0"
-parking_lot = "0"
-arrayvec = "0"
+parking_lot = "0.12.3"
+arrayvec = "0.7.6"
 rand = "0"
 
 [dev-dependencies]
