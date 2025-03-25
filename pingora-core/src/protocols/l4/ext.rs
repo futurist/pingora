@@ -483,7 +483,7 @@ async fn inner_connect_with<F: FnOnce(&TcpSocket) -> Result<()>>(
         ip_bind_addr_no_port(socket.as_raw_fd(), true).or_err(
             SocketError,
             "failed to set socket opts IP_BIND_ADDRESS_NO_PORT",
-        )?;
+        );
 
         if let Some(bind_to) = bind_to {
             if let Some((low, high)) = bind_to.port_range() {
